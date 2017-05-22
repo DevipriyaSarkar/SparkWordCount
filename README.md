@@ -13,3 +13,11 @@ A simple boilerplate Spark word count application using sbt and scala.
 2. Install SBT plugin for Intellij IDEA.
 3. Import this project as a SBT project into your IntelliJ IDEA.
 4. Build and run the project.
+
+## How to build JAR?
+```
+> cd <project-directory>
+> sbt compile
+> sbt run
+> sbt package
+```
