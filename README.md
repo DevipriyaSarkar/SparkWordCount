@@ -1,4 +1,4 @@
-# SimpleSparkTemplate
+# SparkWordCount
 
 A simple boilerplate Spark word count application using sbt and scala.
 
@@ -21,3 +21,11 @@ A simple boilerplate Spark word count application using sbt and scala.
 > sbt run
 > sbt package
 ```
+
+## How to submit the Spark job to the local master?
+
+```
+spark-submit --class WordCount --master local <path-to-the-jar>/<jar-file>.jar
+```
+
+Usually the path to the jar file is \<project-directory>/target/scala-\<scala-version>
